@@ -1,0 +1,1 @@
+This is a simple todo app where you can add todo items by filling the input field and press ENTER key. For deleting the completed task, minus button should be clicked. 

@@ -1,0 +1,38 @@
+body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+.todo-app {
+    width: 300px;
+    margin: auto;
+    background-color: blue;
+    padding: 20px;
+    color: lightblue;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button-minus {
+    background-color: red;
+    color: white;
+    margin-left: auto;
+}
+
+.input-task {
+    width: 80%;
+}
+
+#todoAppName {
+    text-align: center;
+    color: white;
+}
