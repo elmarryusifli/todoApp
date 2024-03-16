@@ -1,14 +1,15 @@
 body {
-    background-color: yellow;
     font-family: Arial, sans-serif;
 }
 
-.todo-app {
-    width: 300px;
-    margin: auto;
-    background-color: blue;
-    padding: 20px;
-    color: lightblue;
+.todo-app.light {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.todo-app.dark {
+    background-color: #333;
+    color: #f0f0f0;
 }
 
 .todo-item {
@@ -34,5 +35,9 @@ body {
 
 #todoAppName {
     text-align: center;
-    color: white;
+}
+
+.theme-toggle {
+    display: block;
+    margin: 20px auto;
 }

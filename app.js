@@ -4,8 +4,10 @@ function TodoApp() {
     const [tasks, setTasks] = useState([
         "Buy birthday gift for Mark", 
         "Submit assignment @Monday", 
-        "Get the monitor repaired"]);
+        "Get the monitor repaired"
+    ]);
     const [newTask, setNewTask] = useState("");
+    const [theme, setTheme] = useState("light");
 
     const addTask = () => {
         if (newTask) {
@@ -19,8 +21,12 @@ function TodoApp() {
         setTasks(newTasks);
     };
 
+    const toggleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
+
     return (
-        <div className="todo-app">
+        <div className={`todo-app ${theme}`}>
             <h2 id="todoAppName">Todo App</h2>
             {tasks.map((task, index) => (
                 <div key={index} className="todo-item">
@@ -37,6 +43,7 @@ function TodoApp() {
                     placeholder="Add a task"
                 />
             </div>
+            <button className="theme-toggle" onClick={toggleTheme}>Toggle Dark Mode</button>
         </div>
     );
 }
